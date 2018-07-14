@@ -1,6 +1,6 @@
-### Dragon command to delete all files and folders on your dekstop
+## Dragon command to delete all files and folders on your dekstop
 
-#### Step 1 create new files and folders on your desktop
+#### Step 1 create new files and folders on your Desktop
 
 launch your Terminal and type
 
@@ -10,22 +10,20 @@ launch your Terminal and type
    	
 -
 
-### Step 2 create a script to delete files and folders on your desktop
+### Step 2 create a script to delete files and folders on your Desktop
 
 open your favourite text editor and create the following script.
 
      #!/bin/bash
 	 echo '' | sudo -S rm -rf /Users/yourusername/Desktop # replace yourusername
 
-save the script and called somthing like removeall.sh 
+save the script and called something like removeall.sh 
 
-make the script executable 
-
-go to Terminal and type
+make the script executable by typing into your Terminal the following command
 
 	$ chmod u+x removeall.sh
 
-test the the shell script by typing into your Terminal 
+test the cript script by typing into your Terminal 
 
 	$ ./removeall.sh
 	
@@ -33,13 +31,13 @@ directories and files on the desktop should disappear.
 
 -
 
-### Step 3 Create an Applescript that invokes the shell script
+### Step 3 Create an Applescript that invokes the script
 
 launch apple scripteditor  and type
 
 	do shell script "bash /Users/ceo/DragonsoftwareMacautomation/removeall.sh"
 	
- now re run step 1 one  to create files and folders again on your desktop.
+ now re run step 1 one  to create files and folders again on your Desktop.
  
   run thw Applescript  and confirm deletion of files and folders from your desktop.
   
